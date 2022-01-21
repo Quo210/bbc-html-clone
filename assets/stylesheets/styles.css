@@ -49,11 +49,118 @@ table {
 
 /* My code */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-    background-color: #333;
+    background: unset;
 }
 
 #navbar {
-    background-color: black;
-    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 7% 12.5% 1fr 12.5%;
+    column-gap: 0.1rem;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    height: 10px;
+    height: 4vh;
+    width: 1600px;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    font-family: monospace;
 }
+
+#navbar > div,a {
+  background-color: black;
+  transition: 0.25s;
+}
+
+.link:hover{
+  color: silver;
+  font-weight: 400;
+}
+
+.link {
+  display: grid;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.linkbar {
+  display: grid;
+  grid-template-columns: repeat(9,auto);
+  min-width: 62.5vw;
+  height: 100%;
+}
+
+.linkbar > .link {
+  border: 1px white solid;
+  border-top: 0px;
+  border-bottom: 0px;
+
+}
+
+div.searchbar {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+input.search{
+  width: 10vw;
+  color: black;
+  font-weight: 500;
+}
+
+input.search::placeholder{
+  color: black;
+  font-weight: 900;
+}
+
+.banner, #login {
+  display: grid;
+  justify-content: center;
+  height: 100%;
+}
+
+#login{
+  justify-content: left;
+  padding-left: 1rem;
+}
+
+/* Header */
+
+header{
+  background: white;
+  height: 5vh;
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header > h1 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+header > h2 {
+  font-size: 125%;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Section 1 */
