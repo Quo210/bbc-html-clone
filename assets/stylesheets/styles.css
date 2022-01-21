@@ -317,5 +317,12 @@ section.news > article > h2 {
 section.news > article > p {
   color: #333;
   font-weight: 500;
+}
 
+section.news > article > h6 {
+  color: #666;
+  font-weight: bold;
+  padding-left: 0.8rem;
+  border-left: red 5px solid;
+  margin-top: 1rem;
 }
